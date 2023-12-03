@@ -71,12 +71,14 @@ function App() {
           <h4>DARK</h4>
           <img src={moon} alt="" />
         </div>
-        <div>
-          <img src={search} alt="" />
-          <input type="text" placeholder="Search GitHub username…" />
-          <button>search</button>
-        </div>
       </div>
+
+      <div className="search">
+        <img src={search} alt="" />
+        <input type="text" placeholder="Search GitHub username…" />
+        <button>search</button>
+      </div>
+
       <div className="main-div">
         <img src={dataList.avatar_url} alt="" />
         <h1>{dataList.name}</h1>
@@ -98,19 +100,19 @@ function App() {
           </div>
         </div>
         <div>
-          <img src={location} />
+          <img src={location} alt="" />
           <h4>{dataList.location}</h4>
         </div>
         <div>
-          <img src={website} />
+          <img src={website} alt="" />
           <h4>{dataList.website}</h4>
         </div>
         <div>
-          <img src={twitter} />
+          <img src={twitter} alt="" />
           <h4>{dataList.twitter}</h4>
         </div>
         <div>
-          <img src={company} />
+          <img src={company} alt="" />
           <h4>{dataList.company}</h4>
         </div>
       </div>
