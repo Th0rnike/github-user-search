@@ -1,7 +1,6 @@
 import React from "react";
-import sun from "./assets/icon-sun.svg";
-import moon from "./assets/icon-moon.svg";
-import search from "./assets/icon-search.svg";
+import sun from "../assets/icon-sun.svg";
+import moon from "../assets/icon-moon.svg";
 
 export default function Header() {
   return (
@@ -10,11 +9,6 @@ export default function Header() {
       <div>
         <h4>DARK</h4>
         <img src={moon} alt="" />
-      </div>
-      <div>
-        <img src={search} alt="" />
-        <input type="text" placeholder="Search GitHub username…" />
-        <button>search</button>
       </div>
     </div>
   );
