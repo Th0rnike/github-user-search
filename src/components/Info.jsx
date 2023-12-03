@@ -61,7 +61,14 @@ export default function Info() {
 
   return (
     <div className="info">
-      <img src={dataList.avatar_url} alt="" />
+      <img
+        style={{
+          width: "30px",
+          height: "30px",
+        }}
+        src={dataList.avatar_url}
+        alt=""
+      />
       <h1>{dataList.name}</h1>
       <p>{dataList.login}</p>
       <p>{dataList.created_at}</p>

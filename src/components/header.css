@@ -1,0 +1,26 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.changeTheme{
+    display: flex;
+    gap: 16px;
+    border: none;
+    background-color: #F6F8FF;
+    color: #4B6A9B;
+    font-weight: 700;
+}
+
+.changeTheme svg path {
+    fill: #697C9A; /* Default SVG color */
+  }
+  
+  .changeTheme:hover {
+    color: #222731; /* Text color change on hover */
+  }
+  
+  .changeTheme:hover svg path {
+    fill: #222731; /* SVG color change on hover */
+  }
