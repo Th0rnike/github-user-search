@@ -1,0 +1,38 @@
+.stats{
+    border-radius: 10px;
+    padding: 18px 15px;
+    background: #F6F8FF;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+
+}
+
+.details p{
+    color: #4B6A9B;
+    text-align: center;
+    font-family: Space Mono;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.details h6{
+    color: #2B3442;
+    text-align: center;
+    font-family: Space Mono;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+}

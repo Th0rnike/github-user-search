@@ -8,6 +8,7 @@ import { useEffect, useState } from "react";
 import ProfileCard from "./ProfileCard";
 import Stats from "./Stats";
 import InfoItem from "./InfoItem";
+import "./info.css";
 
 export default function Info() {
   const TOKEN =
@@ -79,6 +80,7 @@ export default function Info() {
       <InfoItem
         icon={location}
         info={dataList.location ? dataList.location : "Not Available"}
+        className={"custom"}
       />
       <InfoItem
         icon={website}

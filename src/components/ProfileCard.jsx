@@ -1,4 +1,5 @@
 import React from "react";
+import "./profileCard.css";
 
 export default function ProfileCard({
   avatar_url,
@@ -8,19 +9,18 @@ export default function ProfileCard({
   bio,
 }) {
   return (
-    <div className="profileCard">
-      <img
-        style={{
-          width: "30px",
-          height: "30px",
-        }}
-        src={avatar_url}
-        alt=""
-      />
-      <h1>{name}</h1>
-      <p>{login}</p>
-      <p>{created_at}</p>
-      <p>{bio}</p>
-    </div>
+    <>
+      <div className="profileCard">
+        <img src={avatar_url} alt="" />
+        <div className="profileInformation">
+          <h1>{name}</h1>
+          <p id="login">{login}</p>
+          <p id="created_at">{created_at}</p>
+        </div>
+      </div>
+      <div id="bio">
+        <p>{bio}</p>
+      </div>
+    </>
   );
 }

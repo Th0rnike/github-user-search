@@ -1,0 +1,28 @@
+.infoItem{
+    display: flex;
+    gap: 15px;
+    margin-top: 24px;
+    margin-bottom: 17px;
+}
+
+.infoItem img{
+    width: 20px;
+    height: 20px;
+}
+
+.infoItem h4{
+    color: #4B6A9B;
+    font-family: Space Mono;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.custom img{
+    width: 13px;
+}
+
+.custom h4{
+    margin-left: 7px;
+}

@@ -1,0 +1,50 @@
+.profileCard{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.profileCard img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+.profileInformation h1{
+    color: #2B3442;
+    font-family: Space Mono;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.profileInformation #login{
+    color: #0079FF;
+    font-family: Space Mono;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.profileInformation #created_at{
+    color: #697C9A;
+    font-family: Space Mono;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+#bio{
+    margin-top: 34px;
+    margin-bottom: 23px;
+    color: #4B6A9B;
+    font-family: Space Mono;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+    width: 85%;
+}
