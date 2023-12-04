@@ -23,4 +23,6 @@
   
   .changeTheme:hover svg path {
     fill: #222731; /* SVG color change on hover */
+    /* transform: scale(1.2); */
+    /* transition: 1200ms; */
   }

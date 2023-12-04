@@ -5,6 +5,9 @@ import twitter from "../assets/icon-twitter.svg";
 import company from "../assets/icon-company.svg";
 import { Octokit } from "octokit";
 import { useEffect, useState } from "react";
+import ProfileCard from "./ProfileCard";
+import Stats from "./Stats";
+import InfoItem from "./InfoItem";
 
 export default function Info() {
   const TOKEN =
@@ -30,7 +33,7 @@ export default function Info() {
   useEffect(() => {
     octokit
       .request(`GET /users/{username}`, {
-        username: "Th0rnike",
+        username: "fabpot",
         headers: {
           "X-GitHub-Api-Version": "2022-11-28",
         },
@@ -61,48 +64,38 @@ export default function Info() {
 
   return (
     <div className="info">
-      <img
-        style={{
-          width: "30px",
-          height: "30px",
-        }}
-        src={dataList.avatar_url}
-        alt=""
+      <ProfileCard
+        avatar_url={dataList.avatar_url}
+        name={dataList.name}
+        login={dataList.login}
+        created_at={dataList.created_at}
+        bio={dataList.bio}
       />
-      <h1>{dataList.name}</h1>
-      <p>{dataList.login}</p>
-      <p>{dataList.created_at}</p>
-      <p>{dataList.bio}</p>
-      <div className="stats">
-        <div>
-          <p>repos</p>
-          <h6>{dataList.public_repos}</h6>
-        </div>
-        <div>
-          <p>followers</p>
-          <h6>{dataList.followers}</h6>
-        </div>
-        <div>
-          <p>following</p>
-          <h6>{dataList.following}</h6>
-        </div>
-      </div>
-      <div>
-        <img src={location} alt="" />
-        <h4>{dataList.location}</h4>
-      </div>
-      <div>
-        <img src={website} alt="" />
-        <h4>{dataList.website}</h4>
-      </div>
-      <div>
-        <img src={twitter} alt="" />
-        <h4>{dataList.twitter}</h4>
-      </div>
-      <div>
-        <img src={company} alt="" />
-        <h4>{dataList.company}</h4>
-      </div>
+      <Stats
+        public_repos={dataList.public_repos}
+        followers={dataList.followers}
+        following={dataList.following}
+      />
+      <InfoItem
+        icon={location}
+        info={dataList.location ? dataList.location : "Not Available"}
+      />
+      <InfoItem
+        icon={website}
+        info={dataList.website ? dataList.website : "Not Available"}
+      />
+      <InfoItem
+        icon={twitter}
+        info={
+          dataList.twitter_username
+            ? dataList.twitter_username
+            : "Not Available"
+        }
+      />
+      <InfoItem
+        icon={company}
+        info={dataList.company ? dataList.company : "Not Available"}
+      />
     </div>
   );
 }
