@@ -63,13 +63,37 @@ export default function Info() {
       });
   }, []);
 
+  let day = "";
+  let month = "";
+  let year = "";
+
+  if (dataList.created_at) {
+    const monthNames = [
+      "Jan",
+      "Feb",
+      "Mar",
+      "Apr",
+      "May",
+      "Jun",
+      "Jul",
+      "Aug",
+      "Sep",
+      "Oct",
+      "Nov",
+      "Dec",
+    ];
+    day = dataList.created_at.split("-")[2].substring(0, 2);
+    month = monthNames[parseInt(dataList.created_at.split("-")[1][1]) - 1];
+    year = dataList.created_at.split("-")[0];
+  }
+
   return (
     <div className="info">
       <ProfileCard
         avatar_url={dataList.avatar_url}
         name={dataList.name}
-        login={dataList.login}
-        created_at={dataList.created_at}
+        login={"@" + dataList.login}
+        created_at={"Joined " + day + " " + month + " " + year}
         bio={dataList.bio}
       />
       <Stats

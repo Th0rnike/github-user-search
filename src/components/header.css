@@ -4,25 +4,55 @@
     align-items: center;
 }
 
-.changeTheme{
-    display: flex;
-    gap: 16px;
-    border: none;
-    background-color: #F6F8FF;
-    color: #4B6A9B;
-    font-weight: 700;
+.dark{
+  background-color: #141D2F !important;
+  color: #FFFFFF !important;
 }
 
-.changeTheme svg path {
-    fill: #697C9A; /* Default SVG color */
-  }
-  
-  .changeTheme:hover {
-    color: #222731; /* Text color change on hover */
-  }
-  
-  .changeTheme:hover svg path {
-    fill: #222731; /* SVG color change on hover */
-    /* transform: scale(1.2); */
-    /* transition: 1200ms; */
-  }
+.lightButton{
+  display: flex;
+  gap: 16px;
+  border: none;
+  background-color: #F6F8FF;
+  color: #4B6A9B;
+  font-weight: 700;
+  justify-content: center;
+  align-items: center;
+}
+
+.lightButton:hover {
+  color: #222731; /* Text color change on hover */
+}
+
+.lightButton:hover svg path {
+  fill: #222731;
+}
+
+.lightButton svg path {
+  width: 20px;
+  height: 20px;
+}
+
+.darkButton{
+  display: flex;
+  gap: 16px;
+  border: none;
+  background-color: #141D2F;
+  color: #fff;
+  font-weight: 700;
+  justify-content: center;
+  align-items: center;
+}
+
+.darkButton svg path {
+  width: 20px;
+  height: 20px;
+}
+
+.darkButton:hover{
+  color: #90A4D4 !important;
+}
+
+.darkButton:hover svg path {
+  fill: #90A4D4;
+}
