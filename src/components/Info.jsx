@@ -34,7 +34,7 @@ export default function Info() {
   useEffect(() => {
     octokit
       .request(`GET /users/{username}`, {
-        username: "fabpot",
+        username: "octocat",
         headers: {
           "X-GitHub-Api-Version": "2022-11-28",
         },

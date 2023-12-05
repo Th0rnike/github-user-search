@@ -26,3 +26,7 @@
 .custom h4{
     margin-left: 7px;
 }
+
+.faint{
+    opacity: 0.5;
+}
