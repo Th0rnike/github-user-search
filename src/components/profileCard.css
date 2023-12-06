@@ -72,5 +72,7 @@
 }
 
 @media screen and (min-width: 1440px){
-    
+    .right{
+        /* margin-left: 4%; */
+    }
 }

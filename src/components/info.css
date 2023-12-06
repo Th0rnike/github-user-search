@@ -19,3 +19,8 @@
         column-gap: 11%;
     }    
 }
+@media screen and (min-width: 1440px){
+    .grid{
+        margin-left: 25%;
+    }
+}

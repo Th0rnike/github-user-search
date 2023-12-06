@@ -65,6 +65,7 @@ export default function Search({ isDark, updateInfo }) {
       })
       .catch((error) => {
         console.error("Error fetching data:", error);
+        setDataList("error");
       });
   }
 
@@ -78,6 +79,7 @@ export default function Search({ isDark, updateInfo }) {
         type="text"
         placeholder="Search GitHub username…"
       />
+      {dataList === "error" ? <h1 className="error">No results</h1> : ""}
       <button onClick={handleClickUpdate}>Search</button>
     </div>
   );

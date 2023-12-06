@@ -46,3 +46,18 @@
         font-size: 22px;
     }
 }
+
+@media screen and (min-width: 1440px){
+    .stats{
+        margin-left: 25%;
+    }
+    .details{
+        display: inline-flex;
+        align-items: flex-start;
+    }
+    .stats{
+        margin-bottom: 17px;
+        padding-bottom: 0;
+    }
+    
+}

@@ -12,15 +12,19 @@ export default function ProfileCard({
   return (
     <>
       <div className={isDark ? "profileCard darkTheme" : "profileCard"}>
-        <img src={avatar_url} alt="" />
-        <div className="profileInformation">
-          <h1>{name}</h1>
-          <p id="login">{login}</p>
-          <p id="created_at">{created_at}</p>
+        <div>
+          <img src={avatar_url} alt="" />
         </div>
-      </div>
-      <div id="bio">
-        <p>{bio}</p>
+        <div className="right">
+          <div className="profileInformation">
+            <h1>{name}</h1>
+            <p id="login">{login}</p>
+            <p id="created_at">{created_at}</p>
+          </div>
+          <div id="bio">
+            <p>{bio}</p>
+          </div>
+        </div>
       </div>
     </>
   );
