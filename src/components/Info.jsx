@@ -10,7 +10,7 @@ import Stats from "./Stats";
 import InfoItem from "./InfoItem";
 import "./info.css";
 
-export default function Info() {
+export default function Info({ isDark }) {
   const TOKEN =
     "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";
   const octokit = new Octokit({
@@ -88,8 +88,9 @@ export default function Info() {
   }
 
   return (
-    <div className="info">
+    <div className={isDark ? "darkTheme" : ""}>
       <ProfileCard
+        isDark={isDark}
         avatar_url={dataList.avatar_url}
         name={dataList.name}
         login={"@" + dataList.login}
@@ -97,20 +98,24 @@ export default function Info() {
         bio={dataList.bio}
       />
       <Stats
+        isDark={isDark}
         public_repos={dataList.public_repos}
         followers={dataList.followers}
         following={dataList.following}
       />
       <InfoItem
+        isDark={isDark}
         icon={location}
         info={dataList.location ? dataList.location : "Not Available"}
         className={"custom"}
       />
       <InfoItem
+        isDark={isDark}
         icon={website}
         info={dataList.website ? dataList.website : "Not Available"}
       />
       <InfoItem
+        isDark={isDark}
         icon={twitter}
         info={
           dataList.twitter_username
@@ -119,6 +124,7 @@ export default function Info() {
         }
       />
       <InfoItem
+        isDark={isDark}
         icon={company}
         info={dataList.company ? dataList.company : "Not Available"}
       />

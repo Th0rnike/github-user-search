@@ -1,14 +1,8 @@
-import React, { useState } from "react";
+// import React, { useState } from "react";
 import "./header.css";
-import { Icon } from "@iconify/react";
+// import { Icon } from "@iconify/react";
 
-export default function Header() {
-  const [isDark, setIsDark] = useState(false);
-
-  const changeTheme = () => {
-    setIsDark(!isDark);
-  };
-
+export default function Header({ changeTheme, isDark }) {
   return (
     <div className={isDark ? "header dark" : "header"}>
       <h1>devfinder</h1>

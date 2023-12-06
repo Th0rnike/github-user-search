@@ -7,6 +7,7 @@ export default function ProfileCard({
   login,
   created_at,
   bio,
+  isDark,
 }) {
   return (
     <>
