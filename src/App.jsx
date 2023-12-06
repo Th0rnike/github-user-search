@@ -7,6 +7,11 @@ import { useState } from "react";
 
 function App() {
   const [isDark, setIsDark] = useState(false);
+  const [sharedInfo, setSharedInfo] = useState("");
+
+  const handleUpdateInfo = (newInfo) => {
+    setSharedInfo(newInfo);
+  };
 
   const changeTheme = () => {
     setIsDark(!isDark);
@@ -15,8 +20,8 @@ function App() {
   return (
     <div className={isDark ? "App darkmode" : "App"}>
       <Header changeTheme={changeTheme} isDark={isDark} />
-      <Search isDark={isDark} />
-      <Info isDark={isDark} />
+      <Search updateInfo={handleUpdateInfo} isDark={isDark} />
+      <Info sharedInfo={sharedInfo} isDark={isDark} />
     </div>
   );
 }
