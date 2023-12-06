@@ -11,7 +11,7 @@ export default function ProfileCard({
 }) {
   return (
     <>
-      <div className="profileCard">
+      <div className={isDark ? "profileCard darkTheme" : "profileCard"}>
         <img src={avatar_url} alt="" />
         <div className="profileInformation">
           <h1>{name}</h1>

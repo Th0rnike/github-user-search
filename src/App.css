@@ -5,7 +5,11 @@
   font-family: 'Space Mono', monospace;
 }
 
-body{
+.App{
   background-color: #F6F8FF;
-  padding: 30px 24px 0 24px;
+  padding: 30px 24px 80px;
+}
+
+.darkmode{
+  background-color: #141D2F;
 }

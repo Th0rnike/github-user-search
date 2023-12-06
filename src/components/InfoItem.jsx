@@ -1,9 +1,13 @@
 import React from "react";
 import "./infoItem.css";
 
-export default function InfoItem({ className, icon, info }) {
+export default function InfoItem({ className, icon, info, isDark }) {
   return (
-    <div className={`infoItem ${className}`}>
+    <div
+      className={
+        !isDark ? `infoItem ${className}` : `infoItem ${className} darkTheme`
+      }
+    >
       {info === "Not Available" ? (
         <>
           <img className="faint" src={icon} alt="" />

@@ -1,8 +1,12 @@
 import React from "react";
 import location from "../assets/icon-location.svg";
+import locationWhite from "../assets/icon-location-white.svg";
 import website from "../assets/icon-website.svg";
+import websiteWhite from "../assets/icon-website-white.svg";
 import twitter from "../assets/icon-twitter.svg";
+import twitterWhite from "../assets/icon-twitter-white.svg";
 import company from "../assets/icon-company.svg";
+import companyWhite from "../assets/icon-company-white.svg";
 import { Octokit } from "octokit";
 import { useEffect, useState } from "react";
 import ProfileCard from "./ProfileCard";
@@ -34,7 +38,7 @@ export default function Info({ isDark }) {
   useEffect(() => {
     octokit
       .request(`GET /users/{username}`, {
-        username: "octocat",
+        username: "Mokkapps",
         headers: {
           "X-GitHub-Api-Version": "2022-11-28",
         },
@@ -88,7 +92,7 @@ export default function Info({ isDark }) {
   }
 
   return (
-    <div className={isDark ? "darkTheme" : ""}>
+    <div className={isDark ? "info darkTheme" : "info"}>
       <ProfileCard
         isDark={isDark}
         avatar_url={dataList.avatar_url}
@@ -104,19 +108,16 @@ export default function Info({ isDark }) {
         following={dataList.following}
       />
       <InfoItem
-        isDark={isDark}
-        icon={location}
+        icon={isDark ? locationWhite : location}
         info={dataList.location ? dataList.location : "Not Available"}
         className={"custom"}
       />
       <InfoItem
-        isDark={isDark}
-        icon={website}
+        icon={isDark ? websiteWhite : website}
         info={dataList.website ? dataList.website : "Not Available"}
       />
       <InfoItem
-        isDark={isDark}
-        icon={twitter}
+        icon={isDark ? twitterWhite : twitter}
         info={
           dataList.twitter_username
             ? dataList.twitter_username
@@ -124,8 +125,7 @@ export default function Info({ isDark }) {
         }
       />
       <InfoItem
-        isDark={isDark}
-        icon={company}
+        icon={isDark ? companyWhite : company}
         info={dataList.company ? dataList.company : "Not Available"}
       />
     </div>

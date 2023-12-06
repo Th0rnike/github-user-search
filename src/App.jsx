@@ -13,7 +13,7 @@ function App() {
   };
 
   return (
-    <div className="App">
+    <div className={isDark ? "App darkmode" : "App"}>
       <Header changeTheme={changeTheme} isDark={isDark} />
       <Search isDark={isDark} />
       <Info isDark={isDark} />

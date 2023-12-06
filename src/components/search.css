@@ -10,8 +10,10 @@
     box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.20);
 }
 
-.darkTheme{
+.darkTheme, .darkTheme::placeholder{
     background-color: #1E2A47;
+    box-shadow: none;
+    color: #fff;
 }
 
 .search img{
@@ -26,11 +28,12 @@
 
 .search input::placeholder{
     color: #4B6A9B;
-    font-family: Space Mono;
     font-size: 13px;
-    font-style: normal;
-    font-weight: 400;
     line-height: 25px;
+}
+
+.darkTheme input::placeholder{
+    color: white;
 }
 
 .search button{

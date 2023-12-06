@@ -12,11 +12,8 @@
 
 .infoItem h4{
     color: #4B6A9B;
-    font-family: Space Mono;
     font-size: 13px;
-    font-style: normal;
     font-weight: 400;
-    line-height: normal;
 }
 
 .custom img{
@@ -29,4 +26,8 @@
 
 .faint{
     opacity: 0.5;
+}
+
+.darkTheme h4{
+    color: #ffffff;
 }

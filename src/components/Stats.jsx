@@ -1,9 +1,9 @@
 import React from "react";
 import "./stats.css";
 
-export default function Stats({ public_repos, followers, following }) {
+export default function Stats({ public_repos, followers, following, isDark }) {
   return (
-    <div className="stats">
+    <div className={isDark ? "stats darkStats" : "stats"}>
       <div className="details">
         <p>repos</p>
         <h6>{public_repos}</h6>

@@ -5,7 +5,10 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    /* width: 85%; */
+}
+
+.darkStats{
+    background-color: #141D2F;
 }
 
 .details{
@@ -19,21 +22,15 @@
 
 .details p{
     color: #4B6A9B;
-    text-align: center;
-    font-family: Space Mono;
     font-size: 11px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
 }
 
 .details h6{
     color: #2B3442;
-    text-align: center;
-    font-family: Space Mono;
     font-size: 16px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    text-transform: uppercase;
+}
+
+.darkStats .details p,
+.darkStats .details h6 {
+    color: #fff; /* Change text color to white */
 }
