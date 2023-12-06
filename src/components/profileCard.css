@@ -48,3 +48,29 @@
 .darkTheme #bio{
     color: #fff;
 }
+
+@media screen and (min-width: 768px){
+    .profileInformation h1{
+        font-size: 26px;
+    }
+    .profileInformation #login{
+        font-size: 16px;
+    }
+    .profileInformation #created_at{
+        font-size: 15px;
+    }
+    #bio{
+        font-size: 15px;
+    }
+    .profileCard img{
+        width: 117px;
+        height: 117px;
+        margin-right: 20px;
+        margin-bottom: 24px;
+    }
+    
+}
+
+@media screen and (min-width: 1440px){
+    
+}

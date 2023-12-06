@@ -1,7 +1,6 @@
 .infoItem{
     display: flex;
     gap: 15px;
-    margin-top: 24px;
     margin-bottom: 17px;
 }
 
@@ -30,4 +29,11 @@
 
 .darkTheme h4{
     color: #ffffff;
+}
+
+@media screen and (min-width: 768px){
+    .infoItem h4{
+        font-size: 15px;
+        margin-bottom: 19px;
+    }
 }

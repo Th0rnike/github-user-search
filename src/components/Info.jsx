@@ -55,27 +55,29 @@ export default function Info({ isDark, sharedInfo }) {
         followers={sharedInfo.followers}
         following={sharedInfo.following}
       />
-      <InfoItem
-        icon={isDark ? locationWhite : location}
-        info={sharedInfo.location ? sharedInfo.location : "Not Available"}
-        className={"custom"}
-      />
-      <InfoItem
-        icon={isDark ? websiteWhite : website}
-        info={sharedInfo.website ? sharedInfo.website : "Not Available"}
-      />
-      <InfoItem
-        icon={isDark ? twitterWhite : twitter}
-        info={
-          sharedInfo.twitter_username
-            ? sharedInfo.twitter_username
-            : "Not Available"
-        }
-      />
-      <InfoItem
-        icon={isDark ? companyWhite : company}
-        info={sharedInfo.company ? sharedInfo.company : "Not Available"}
-      />
+      <div className="grid">
+        <InfoItem
+          icon={isDark ? locationWhite : location}
+          info={sharedInfo.location ? sharedInfo.location : "Not Available"}
+          className={"custom"}
+        />
+        <InfoItem
+          icon={isDark ? websiteWhite : website}
+          info={sharedInfo.website ? sharedInfo.website : "Not Available"}
+        />
+        <InfoItem
+          icon={isDark ? twitterWhite : twitter}
+          info={
+            sharedInfo.twitter_username
+              ? sharedInfo.twitter_username
+              : "Not Available"
+          }
+        />
+        <InfoItem
+          icon={isDark ? companyWhite : company}
+          info={sharedInfo.company ? sharedInfo.company : "Not Available"}
+        />
+      </div>
     </div>
   );
 }

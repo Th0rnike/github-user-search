@@ -10,3 +10,12 @@
     background-color: #1E2A47;
     box-shadow: none;
 }
+
+@media screen and (min-width: 768px){
+    .grid{
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 11%;
+    }    
+}

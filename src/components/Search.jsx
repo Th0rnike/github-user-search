@@ -61,7 +61,7 @@ export default function Search({ isDark, updateInfo }) {
           twitter_username: data.twitter_username,
           company: data.company,
         });
-        updateInfo(dataList);
+        updateInfo(data);
       })
       .catch((error) => {
         console.error("Error fetching data:", error);

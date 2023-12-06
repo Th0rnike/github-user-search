@@ -13,3 +13,19 @@
 .darkmode{
   background-color: #141D2F;
 }
+
+@media screen and (min-width: 768px){
+  .App{
+    padding: 140px 98px 234px;
+  }
+}
+
+@media screen and (min-width: 1440px){
+  .App{
+    padding: 140px 98px 145px;
+  }
+  .App > * {
+    width: 50%;
+    margin: 0 auto;    
+  }
+}

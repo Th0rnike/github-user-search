@@ -1,6 +1,4 @@
-// import React, { useState } from "react";
 import "./header.css";
-// import { Icon } from "@iconify/react";
 
 export default function Header({ changeTheme, isDark }) {
   return (

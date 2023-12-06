@@ -5,6 +5,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+    margin-bottom: 24px;
 }
 
 .darkStats{
@@ -17,7 +18,6 @@
     align-items: center;
     justify-content: center;
     gap: 8px;
-
 }
 
 .details p{
@@ -33,4 +33,16 @@
 .darkStats .details p,
 .darkStats .details h6 {
     color: #fff; /* Change text color to white */
+}
+
+@media screen and (min-width: 768px){
+    .details{
+        margin-bottom: 30px;
+    }
+    .details p{
+        font-size: 13px;
+    }
+    .details h6{
+        font-size: 22px;
+    }
 }
