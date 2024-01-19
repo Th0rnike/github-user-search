@@ -4,8 +4,7 @@ import "./search.css";
 import { Octokit } from "octokit";
 
 export default function Search({ isDark, updateInfo }) {
-  const TOKEN =
-    "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";
+  const TOKEN = process.env.REACT_APP_TOKEN;
   const octokit = new Octokit({
     auth: TOKEN,
   });
