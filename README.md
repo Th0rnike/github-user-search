@@ -6,6 +6,13 @@ Welcome to the GitHub User Search App project! This application allows users to 
 
 The GitHub User Search App is a project made with React. It helps you practice React, JavaScript, CSS, and HTML while connecting with GitHub's data. It's like a game where you search for GitHub users and see their profiles. This project is inspired by challenges from Frontend Mentor. It's meant to be easy to use and understand.
 
+## Image Of LIght Mode
+![Screenshot 2024-02-08 at 22-04-17 React App](https://github.com/Th0rnike/github-user-search/assets/116254117/9d2a1244-2a08-457a-b546-76713bf09dfd)
+
+## Image of Dark Mode
+![Screenshot 2024-02-08 at 22-04-11 React App](https://github.com/Th0rnike/github-user-search/assets/116254117/429e7253-0df8-467d-a4cd-75707ee63bb1)
+
+
 ## Technologies Used
 
 - HTML
