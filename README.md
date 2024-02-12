@@ -1,72 +1,101 @@
-# Getting Started with Create React App
+# Github user search app
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to the GitHub User Search App project! This application allows users to search for GitHub users and view their repositories, followers, and other details fetched from the GitHub API.
 
-## Available Scripts
+## Description
 
-In the project directory, you can run:
+The GitHub User Search App is a project made with React. It helps you practice React, JavaScript, CSS, and HTML while connecting with GitHub's data. It's like a game where you search for GitHub users and see their profiles. This project is inspired by challenges from Frontend Mentor. It's meant to be easy to use and understand.
 
-### `npm start`
+## Technologies Used
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- HTML
+- CSS
+- JavaScript
+- GitHub API
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Table of Contents
 
-### `npm test`
+- [Installation](#installation)
+- [Usage](#usage)
+- [Features](#features)
+- [Resources](#resources)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Installation
 
-### `npm run build`
+To install and run the Tip Calculator project locally, follow these steps:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Clone the repository to your local machine:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```bash
+git clone https://github.com/Th0rnike/github-user-search-app.git
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+2. Navigate to the project directory:
 
-### `npm run eject`
+```bash
+cd github-user-search-app
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+3. Install dependencies using npm or yarn:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+npm install
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+or
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```bash
+yarn install
+```
 
-## Learn More
+4. Start the development server:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```bash
+npm run dev
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+or
 
-### Code Splitting
+```bash
+yarn dev
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Usage
 
-### Analyzing the Bundle Size
+To use the GitHub User Search App, follow these steps:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+1. Open the application in your web browser.
 
-### Making a Progressive Web App
+2. In the search bar, enter the GitHub username you want to search for.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+3. Press the "Search" button or hit Enter to retrieve information about the user.
 
-### Advanced Configuration
+4. Explore the user's repositories, followers, and other details displayed on the screen.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+5. You can also click on specific repositories to view more information about them.
 
-### Deployment
+6. Enjoy exploring GitHub profiles with the GitHub User Search App!
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## Features
 
-### `npm run build` fails to minify
+The GitHub User Search App offers the following features:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# github-user-search
-# github-user-search
+1. **User-friendly Interface**: The app provides an intuitive interface for searching GitHub users.
+
+2. **User Profile Display**: Users can view detailed information about searched GitHub users, including their repositories, followers, and more.
+
+3. **Real-time Search**: The app updates search results in real-time as users type in the search bar.
+
+4. **Responsive Design**: The application is designed to be responsive, ensuring a seamless user experience across various devices and screen sizes.
+
+5. **GitHub API Integration**: The app seamlessly integrates with the GitHub API to fetch user data and display it in the interface.
+
+6. **Repository Details**: Users can explore specific repositories and view additional details such as stars, forks, and descriptions.
+
+## Resources
+
+- [Bitcamp](https://www.bitcamp.ge/)
+- [Frontend Mentor](https://www.frontendmentor.io/)
+- [Github Api Docs](https://docs.github.com/en/rest/search/search?apiVersion=2022-11-28)
+
+DONE BY @[ME](https://github.com/Th0rnike)
