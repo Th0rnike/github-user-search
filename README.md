@@ -29,7 +29,7 @@ The GitHub User Search App is a project made with React. It helps you practice R
 
 ## Installation
 
-To install and run the Tip Calculator project locally, follow these steps:
+To install and run the Github User Search project locally, follow these steps:
 
 1. Clone the repository to your local machine:
 
